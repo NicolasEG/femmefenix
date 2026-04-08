@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Femme Fenix | Carrito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Femme Fenix</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html" class="active">Carrito <span class="cart-count" id="cart-count">0</span></a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html" class="active">Carrito <span class="cart-count" id="cart-count-mobile">0</span></a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero small-hero">
+      <div class="container reveal">
+        <span class="section-tag">Tu compra</span>
+        <h1>Carrito</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cart-layout">
+        <div class="cart-items reveal">
+          <div id="cart-items-container"></div>
+        </div>
+
+        <aside class="cart-summary reveal delay-1">
+          <h3>Resumen</h3>
+
+          <div class="summary-line">
+            <span>Productos</span>
+            <strong id="summary-products">0</strong>
+          </div>
+
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <strong id="summary-subtotal">$0</strong>
+          </div>
+
+          <div class="summary-line">
+            <span>Envío</span>
+            <strong id="summary-shipping">Gratis</strong>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <strong id="summary-total">$0</strong>
+          </div>
+
+          <button class="btn btn-primary btn-full">Finalizar compra</button>
+          <a href="productos.html" class="btn btn-secondary btn-full">Seguir comprando</a>
+          <button class="clear-cart-btn" id="clear-cart-btn">Vaciar carrito</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Femme Fenix</h3>
+        <p>Moda Fitness.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

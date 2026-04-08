@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Femme Fenix | Productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Femme Fenix</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="carrito.html">Carrito <span class="cart-count" id="cart-count">0</span></a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html" class="active">Productos</a>
+      <a href="carrito.html">Carrito <span class="cart-count" id="cart-count-mobile">0</span></a>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero small-hero">
+      <div class="container reveal">
+        <span class="section-tag">Catálogo</span>
+        <h1>Nuestros productos</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar reveal">
+          <div class="toolbar-left">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="blazers">Blazers</button>
+            <button class="filter-btn" data-filter="camperas">Camperas</button>
+            <button class="filter-btn" data-filter="vestidos">Vestidos</button>
+            <button class="filter-btn" data-filter="basicos">Básicos</button>
+          </div>
+
+          <div class="toolbar-right">
+            <input type="text" id="search-input" placeholder="Buscar producto..." />
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-list">
+          <article class="product-card reveal product-item" data-category="blazers" data-name="Blazer Oversize">
+            <div class="product-image">
+              <img src="img/1.jpeg" alt="Blazer Oversize">
+              <span class="product-pill">Nuevo</span>
+            </div>
+            <div class="product-body">
+              <h3>Blazer Oversize</h3>
+              <div class="product-foot">
+                <strong>$48.500</strong>
+                <button class="btn-add"
+                  data-id="1"
+                  data-name="Blazer Oversize"
+                  data-price="48500"
+                  data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-1 product-item" data-category="camperas" data-name="Campera Urban Black">
+            <div class="product-image">
+              <img src="img/2.jpeg" alt="Campera Urban Black">
+              <span class="product-pill">Top</span>
+            </div>
+            <div class="product-body">
+              <h3>Campera Urban Black</h3>
+              <div class="product-foot">
+                <strong>$62.900</strong>
+                <button class="btn-add"
+                  data-id="2"
+                  data-name="Campera Urban Black"
+                  data-price="62900"
+                  data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2 product-item" data-category="vestidos" data-name="Vestido Midnight">
+            <div class="product-image">
+              <img src="img/3.jpeg" alt="Vestido Midnight">
+              <span class="product-pill">Elegante</span>
+            </div>
+            <div class="product-body">
+              <h3>Vestido Midnight</h3>
+              <div class="product-foot">
+                <strong>$58.200</strong>
+                <button class="btn-add"
+                  data-id="4"
+                  data-name="Vestido Midnight"
+                  data-price="58200"
+                  data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal product-item" data-category="basicos" data-name="Remera Essential White">
+            <div class="product-image">
+              <img src="img/4.jpeg" alt="Remera Essential White">
+              <span class="product-pill">Básico</span>
+            </div>
+            <div class="product-body">
+              <h3>Remera Essential White</h3>
+              <div class="product-foot">
+                <strong>$21.900</strong>
+                <button class="btn-add"
+                  data-id="5"
+                  data-name="Remera Essential White"
+                  data-price="21900"
+                  data-image="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-1 product-item" data-category="vestidos" data-name="Conjunto Beige Chic">
+            <div class="product-image">
+              <img src="img/5.jpeg" alt="Conjunto Beige Chic">
+              <span class="product-pill">Tendencia</span>
+            </div>
+            <div class="product-body">
+              <h3>Conjunto Beige Chic</h3>
+              <div class="product-foot">
+                <strong>$55.800</strong>
+                <button class="btn-add"
+                  data-id="3"
+                  data-name="Conjunto Beige Chic"
+                  data-price="55800"
+                  data-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2 product-item" data-category="blazers" data-name="Blazer Ivory Luxe">
+            <div class="product-image">
+              <img src="img/6.jpeg" alt="Blazer Ivory Luxe">
+              <span class="product-pill">Premium</span>
+            </div>
+            <div class="product-body">
+              <h3>Blazer Ivory Luxe</h3>
+              <div class="product-foot">
+                <strong>$51.300</strong>
+                <button class="btn-add"
+                  data-id="6"
+                  data-name="Blazer Ivory Luxe"
+                  data-price="51300"
+                  data-image="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal product-item" data-category="camperas" data-name="Campera Denim Blue">
+            <div class="product-image">
+              <img src="img/7.jpeg" alt="Campera Denim Blue">
+              <span class="product-pill">Urbano</span>
+            </div>
+            <div class="product-body">
+              <h3>Campera Denim Blue</h3>
+              <div class="product-foot">
+                <strong>$44.700</strong>
+                <button class="btn-add"
+                  data-id="7"
+                  data-name="Campera Denim Blue"
+                  data-price="44700"
+                  data-image="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-1 product-item" data-category="basicos" data-name="Top Rib Black">
+            <div class="product-image">
+              <img src="img/8.jpeg" alt="Top Rib Black">
+              <span class="product-pill">Must-have</span>
+            </div>
+            <div class="product-body">
+              <h3>Top Rib Black</h3>
+              <div class="product-foot">
+                <strong>$19.800</strong>
+                <button class="btn-add"
+                  data-id="8"
+                  data-name="Top Rib Black"
+                  data-price="19800"
+                  data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <h3>Femme Fenix</h3>
+        <p>Moda Fitness</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
