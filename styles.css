@@ -246,9 +246,9 @@ input{
 }
 
 .btn-secondary{
-  color:#fff;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.10);
+  color:#0b0b12; /* negro */
+  background:rgba(255,255,255,0.6);
+  border:1px solid rgba(0,0,0,0.08);
 }
 
 .btn-secondary:hover{
@@ -271,8 +271,8 @@ input{
   min-width:190px;
   padding:18px 18px;
   border-radius:20px;
-  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
-  border:1px solid rgba(255,255,255,0.08);
+  background:linear-gradient(135deg, rgba(124,92,255,0.25), rgba(160,120,255,0.18));
+  border:1px solid rgba(124,92,255,0.35);
   box-shadow:var(--shadow);
 }
 
